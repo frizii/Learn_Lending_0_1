@@ -236,15 +236,23 @@ left: 0;
 .form__text,
 .news__text{
     letter-spacing: 0.1px;
+    line-height: 20px;
 }
 
 .services__btn a,
 .news__btn a{
+    transition-duration: 0.4s;
     color: #373636;
     line-height: 24px;
     letter-spacing: 0.25px;
     padding: 5px 38px;
     border: 3px solid #e6e6e6;
+}
+.services__btn a:hover,
+.news__btn a:hover{
+    background-color: #ffc222;
+    border-color: #ffc222;
+    color: white;
 }
 
 .services__items{
@@ -579,6 +587,7 @@ position: relative;
 
 .news__blog-text{
     letter-spacing: 0.1px;
+    line-height: 20px;
     color: #5e5e5e;
 }
 
@@ -593,6 +602,7 @@ position: relative;
 
 .news__slider-text{
    margin-bottom: 30px; 
+   line-height: 20px;
 }
 
 .news__slider-author{
@@ -622,4 +632,92 @@ position: relative;
 
 .news__slider-inner .slick-disabled:before{
     color: #dadada;
+}
+
+.footer__content{
+    background-color: #595959;
+    padding: 60px 0px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__inner .header__btn{
+    float: none;
+    display: inline-block;
+}
+
+.footer__map{
+    padding-top: 10px;
+    max-width: 630px;
+}
+
+/* .footer__map iframe{
+    width: 100%;
+    height: 250px;
+} */
+
+.footer__title{
+    font-weight: 500;
+    font-style: 16px;
+    color: #fff;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+}
+
+.footer__text{
+    color: #d3d2d2;
+    margin-bottom: 20px;
+}
+
+.footer__info{
+    max-width: 360px;
+}
+
+.footer__list{
+    padding-top: 10px;
+}
+
+.footer__list li{
+    margin-top: 10px;
+}
+
+.footer__list a{
+    font-style: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 33px;
+    position: relative;
+}
+
+.footer__list a:before{
+    content: "\f003";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+    font-family: 'icomoon';
+}
+
+.footer__list .footer__phone:before{
+    content: "\f095";
+    left: 2px;
+}
+
+.footer__list .footer__adress:before{
+    content: "\f041";
+    left: 2px;
+}
+
+.footer__copy{
+    background-color: #303030;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    font-weight: 400;
 }
